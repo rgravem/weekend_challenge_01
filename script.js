@@ -4,12 +4,12 @@ var employee = [];
 var addEmployee = function(){
   console.log('in addEmployee');
   var newEmp = {
-    first: getElementById('firstName').value,
-    last: getElementById('lastName').value,
-    id: getElementById('idNumber').value,
-    title: getElementById('jobTitle').value,
-    salary: getElementById('annualSalary').value
+    first: document.getElementById('firstName').value,
+    last: document.getElementById('lastName').value,
+    id: document.getElementById('idNumber').value,
+    title: document.getElementById('jobTitle').value,
+    salary: document.getElementById('annualSalary').value
   };
-  console.log( newEmp );
   employee.push( newEmp );
+  console.log(employee);
 };
