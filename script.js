@@ -10,6 +10,16 @@ var addEmployee = function(){
     title: document.getElementById('jobTitle').value,
     salary: document.getElementById('annualSalary').value
   };
+  clearInputs();
   employee.push( newEmp );
   console.log(employee);
+};
+
+var clearInputs = function(){
+  document.getElementById('firstName').value='';
+  document.getElementById('lastName').value='';
+  document.getElementById('idNumber').value='';
+  document.getElementById('jobTitle').value='';
+  document.getElementById('annualSalary').value='';
+
 };
